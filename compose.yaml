@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: vinylstore
+      POSTGRES_USER: vinylstore
+      POSTGRES_PASSWORD: vinylstore
+    ports:
+      - "5432:5432"
